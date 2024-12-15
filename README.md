@@ -1,4 +1,4 @@
-# Event Calendar Application
+# Event Calendar Application - Evento
 
 This is a dynamic event calendar application built with React. It allows users to manage events on a calendar by adding, editing, and deleting events. The application also stores events persistently using `localStorage`, so the data is retained across page refreshes.
 
