@@ -93,7 +93,7 @@ const Calendar = () => {
         <button onClick={handlePrevMonth}
         className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition duration-200 ease-in-out"
         >Previous</button>
-        <h2>
+        <h2 className="font-bold">
           {monthName} {currentYear}
         </h2>
         <button onClick={handleNextMonth}
@@ -108,10 +108,11 @@ const Calendar = () => {
           </div>
         ))}
         {days.map((day, index) => (
+          
           <Dialog key={index}>
             <DialogTrigger asChild>
               <div
-                className={`grid-cell ${day ? "" : "empty"}`}
+                className={`${ day === today.getDate() ? "current-day" : ""} grid-cell ${day ? "" : "empty"}`}
                 onClick={() => setSelectedDay(day)}
               >
                 {day}

@@ -48,12 +48,15 @@ body {
     text-align: center;
     padding: 10px;
   }
+
+  .current-day {
+    background-color: #b0fa60 !important;
+  }
   
   .grid-cell {
     text-align: center;
     padding: 30px;
     cursor: pointer;
-    border: 1px solid #ddd;
     border-radius: 5px;
     position: relative;
     background-color: #ffffde;
